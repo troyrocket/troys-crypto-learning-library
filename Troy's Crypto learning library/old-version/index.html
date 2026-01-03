@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Troy's Crypto learning library | Faces</title>
+    <meta
+      name="description"
+      content="Create sites, docs and slides people remember"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Faces Badge -->
+    <div class="faces-badge">
+      <a
+        href="https://faces.app"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="badge"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+        >
+          <path
+            d="M14.4199 10.0859C13.7543 12.1342 12.1362 13.7525 10.0879 14.4182C10.5729 13.5925 10.9612 12.4866 11.2068 11.2051C12.4883 10.9595 13.5942 10.571 14.4199 10.0859Z"
+            fill="white"
+          ></path>
+          <path
+            d="M9.88989 11.3984C9.73969 12.0603 9.54907 12.6517 9.32983 13.1528C9.05438 13.7824 8.75862 14.2136 8.49365 14.4697C8.23474 14.72 8.0699 14.7471 8.00024 14.7471C7.93058 14.7471 7.76575 14.72 7.50684 14.4697C7.24186 14.2136 6.94611 13.7824 6.67065 13.1528C6.45141 12.6517 6.26056 12.0603 6.11035 11.3984C6.71631 11.4626 7.34917 11.4971 8.00024 11.4971C8.65123 11.4971 9.28401 11.4626 9.88989 11.3984Z"
+            fill="#FFE820"
+          ></path>
+          <path
+            d="M1.58008 10.0859C2.40572 10.571 3.51173 10.9592 4.79321 11.2048C5.03883 12.4863 5.42728 13.5923 5.91235 14.418C3.86412 13.7522 2.24578 12.1342 1.58008 10.0859Z"
+            fill="#EB0000"
+          ></path>
+          <path
+            d="M11.4014 6.10938C12.0633 6.25958 12.6546 6.45043 13.1558 6.66968C13.7854 6.94513 14.2165 7.24089 14.4727 7.50586C14.6917 7.73246 14.7397 7.88701 14.7483 7.96875L14.75 7.99927L14.7483 8.02979C14.7397 8.11153 14.6917 8.26607 14.4727 8.49268C14.2165 8.75765 13.7854 9.0534 13.1558 9.32886C12.6546 9.5481 12.0632 9.73871 11.4014 9.88892C11.4656 9.28303 11.5 8.65025 11.5 7.99927C11.5 7.34819 11.4656 6.71533 11.4014 6.10938Z"
+            fill="white"
+          ></path>
+          <path
+            d="M8 5.75C8.7429 5.75 9.45301 5.79753 10.1162 5.88354C10.2023 6.54682 10.25 7.25699 10.25 8C10.25 8.74292 10.2022 9.45301 10.1162 10.1162C9.45301 10.2022 8.74292 10.25 8 10.25C7.25699 10.25 6.54682 10.2023 5.88354 10.1162C5.79753 9.45301 5.75 8.7429 5.75 8C5.75 7.25701 5.79751 6.54681 5.88354 5.88354C6.54681 5.79751 7.25701 5.75 8 5.75Z"
+            fill="#01AE5A"
+          ></path>
+          <path
+            d="M4.59839 6.10938C4.54099 6.65105 4.50763 7.21425 4.50122 7.79272L4.5 7.99927C4.5 8.65024 4.5342 9.28304 4.59839 9.88892C3.93661 9.73872 3.3453 9.54807 2.84424 9.32886C2.21463 9.0534 1.78351 8.75765 1.52734 8.49268C1.27706 8.23376 1.25 8.06893 1.25 7.99927C1.25 7.92961 1.27706 7.76477 1.52734 7.50586C1.78351 7.24089 2.21463 6.94513 2.84424 6.66968C3.34531 6.45046 3.93659 6.25957 4.59839 6.10938Z"
+            fill="white"
+          ></path>
+          <path
+            d="M10.0879 1.57812C12.1362 2.24376 13.7544 3.86196 14.4202 5.91016C13.5945 5.42514 12.4885 5.03685 11.207 4.79126C10.9614 3.50972 10.573 2.40377 10.0879 1.57812Z"
+            fill="#266EF1"
+          ></path>
+          <path
+            d="M8.00024 1.25C8.06991 1.25 8.23474 1.27706 8.49365 1.52734C8.75862 1.78351 9.05438 2.21463 9.32983 2.84424C9.54905 3.3453 9.7397 3.93661 9.88989 4.59839C9.34829 4.54101 8.78517 4.50763 8.20679 4.50122L8.00024 4.5C7.34918 4.5 6.7163 4.53418 6.11035 4.59839C6.26055 3.93659 6.45144 3.34531 6.67065 2.84424C6.94611 2.21463 7.24186 1.78351 7.50684 1.52734C7.76575 1.27706 7.93058 1.25 8.00024 1.25Z"
+            fill="white"
+          ></path>
+          <path
+            d="M5.91211 1.57812C5.42707 2.40377 5.03882 3.50982 4.79321 4.79126C3.51171 5.03689 2.40572 5.42531 1.58008 5.9104C2.24576 3.86221 3.86395 2.24388 5.91211 1.57812Z"
+            fill="white"
+          ></path>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0ZM9.88965 11.4014C9.28377 11.4656 8.65099 11.5 8 11.5C7.34893 11.5 6.71606 11.4656 6.11011 11.4014C6.26031 12.0633 6.45117 12.6546 6.67041 13.1558C6.94586 13.7854 7.24162 14.2165 7.50659 14.4727C7.7655 14.7229 7.93034 14.75 8 14.75C8.06966 14.75 8.2345 14.7229 8.49341 14.4727C8.75838 14.2165 9.05414 13.7854 9.32959 13.1558C9.54883 12.6546 9.73944 12.0632 9.88965 11.4014ZM1.57959 10.0881C2.24529 12.1364 3.86364 13.7544 5.91187 14.4202C5.42679 13.5945 5.03834 12.4885 4.79272 11.207C3.51124 10.9614 2.40523 10.5732 1.57959 10.0881ZM14.4202 10.0879C13.5945 10.573 12.4886 10.9614 11.207 11.207C10.9614 12.4885 10.5732 13.5945 10.0881 14.4202C12.1364 13.7544 13.7545 12.1362 14.4202 10.0879ZM8 5.75C7.25701 5.75 6.54681 5.79751 5.88354 5.88354C5.79751 6.54681 5.75 7.25701 5.75 8C5.75 8.7429 5.79752 9.45301 5.88354 10.1162C6.54682 10.2023 7.25699 10.25 8 10.25C8.74292 10.25 9.453 10.2022 10.1162 10.1162C10.2022 9.453 10.25 8.74292 10.25 8C10.25 7.25699 10.2023 6.54682 10.1162 5.88354C9.45301 5.79752 8.7429 5.75 8 5.75ZM4.59839 6.11011C3.93659 6.26031 3.34531 6.45119 2.84424 6.67041C2.21463 6.94586 1.78351 7.24162 1.52734 7.50659C1.27706 7.7655 1.25 7.93034 1.25 8C1.25 8.06966 1.27706 8.2345 1.52734 8.49341C1.78351 8.75838 2.21463 9.05414 2.84424 9.32959C3.3453 9.5488 3.93661 9.73945 4.59839 9.88965C4.5342 9.28377 4.5 8.65098 4.5 8L4.50122 7.79346C4.50763 7.21499 4.54099 6.65178 4.59839 6.11011ZM11.4014 6.11011C11.4656 6.71606 11.5 7.34893 11.5 8C11.5 8.65098 11.4656 9.28376 11.4014 9.88965C12.0632 9.73944 12.6546 9.54883 13.1558 9.32959C13.7854 9.05414 14.2165 8.75838 14.4727 8.49341C14.6917 8.26681 14.7397 8.11226 14.7483 8.03052L14.75 8L14.7483 7.96948C14.7397 7.88774 14.6917 7.73319 14.4727 7.50659C14.2165 7.24162 13.7854 6.94586 13.1558 6.67041C12.6546 6.45117 12.0633 6.26031 11.4014 6.11011ZM5.91162 1.57959C3.86346 2.24534 2.24527 3.86368 1.57959 5.91187C2.40523 5.42677 3.51122 5.03836 4.79272 4.79272C5.03833 3.51128 5.42658 2.40523 5.91162 1.57959ZM10.0879 1.57959C10.573 2.40523 10.9614 3.51118 11.207 4.79272C12.4885 5.03831 13.5945 5.4266 14.4202 5.91162C13.7544 3.86342 12.1362 2.24522 10.0879 1.57959ZM8 1.25C7.93034 1.25 7.7655 1.27706 7.50659 1.52734C7.24162 1.78351 6.94586 2.21463 6.67041 2.84424C6.45119 3.34531 6.26031 3.93659 6.11011 4.59839C6.71605 4.53418 7.34894 4.5 8 4.5L8.20654 4.50122C8.78493 4.50763 9.34805 4.54101 9.88965 4.59839C9.73945 3.93661 9.5488 3.3453 9.32959 2.84424C9.05414 2.21463 8.75838 1.78351 8.49341 1.52734C8.2345 1.27706 8.06966 1.25 8 1.25Z"
+            fill="black"
+          ></path>
+        </svg>
+        <span>face by @troyyan</span>
+      </a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="page-container">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="hero-title fade-in">Troy's Crypto learning library</h1>
+
+          <div class="hero-description fade-in-delay">
+            <div class="description-content">
+              <p class="hero-subtitle">
+                a collection of the best resources for learning Crypto from the
+                Internet, hand-picked and curated by
+                <a
+                  href="https://x.com/zarazhangrui"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Troy Yan</a
+                >.<br /><br />
+                all resources are:<br />
+                - free to access<br />
+                - friendly to non-technical people
+              </p>
+              <div class="accent-line"></div>
+            </div>
+          </div>
+
+          <div class="section-divider">
+            <div class="divider-line"></div>
+            <div class="divider-accent"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Videos Section -->
+      <section class="videos-section">
+        <div class="container">
+          <div class="videos-header">
+            <div>
+              <h2 class="section-title">Featured Videos</h2>
+            </div>
+            <button class="btn-primary" id="viewCollectionBtn">
+              <span>View Complete Collection</span>
+            </button>
+          </div>
+
+          <p class="videos-intro">
+            I have personally watched all of these videos, from beginning to
+            end. I picked these because I learned a lot from them.<br /><br />
+            I watch a LOT of YouTube videos on AI. I've filtered the best for
+            you.<br /><br />
+            I recommend watching them using
+            <a
+              href="https://longcut.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LongCut</a
+            >, a tool that I built with friends to help you learn from long
+            YouTube videos better and faster.
+          </p>
+
+          <!-- Video Grid -->
+          <div class="video-grid">
+            <!-- Video Card 1 -->
+            <div class="video-card" style="animation-delay: 200ms">
+              <div class="video-embed">
+                <iframe
+                  src="https://www.youtube.com/embed/7xTGNNLPyMI"
+                  title="Deep Dive into LLMs like ChatGPT"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="video-content">
+                <div class="video-body">
+                  <div class="video-tags">
+                    <button class="tag">Fundamentals</button>
+                  </div>
+                  <a
+                    href="https://www.youtube.com/watch?v=7xTGNNLPyMI"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="video-title-link"
+                  >
+                    <h3 class="video-title">
+                      <strong>Deep Dive into LLMs like ChatGPT</strong>
+                    </h3>
+                  </a>
+                  <p class="video-author">Andrej Karpathy</p>
+                  <p class="video-description">
+                    The best introduction into LLMs on the Internet
+                  </p>
+                </div>
+                <div class="video-footer">
+                  <span class="video-duration">3:31:23</span>
+                  <a
+                    href="https://tldw.us/analyze/7xTGNNLPyMI?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D7xTGNNLPyMI"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="longcut-link"
+                  >
+                    <span>Watch on LongCut</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M15 3h6v6"></path>
+                      <path d="M10 14 21 3"></path>
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Card 2 -->
+            <div class="video-card" style="animation-delay: 300ms">
+              <div class="video-embed">
+                <iframe
+                  src="https://www.youtube.com/embed/IcbuTTVUY7M"
+                  title="How to Build a Beloved AI Product"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="video-content">
+                <div class="video-body">
+                  <div class="video-tags">
+                    <button class="tag">Product</button>
+                    <button class="tag">Founder interview</button>
+                  </div>
+                  <a
+                    href="https://www.youtube.com/watch?v=IcbuTTVUY7M"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="video-title-link"
+                  >
+                    <h3 class="video-title">
+                      <strong
+                        >How to Build a Beloved AI Product - Granola CEO Chris
+                        Pedregal</strong
+                      >
+                    </h3>
+                  </a>
+                  <p class="video-author">The MAD Podcast with Matt Turck</p>
+                  <p class="video-description">
+                    Learn from the founder of Granola, the AI PM that I admire
+                    the most
+                  </p>
+                </div>
+                <div class="video-footer">
+                  <span class="video-duration">1:08:35</span>
+                  <a
+                    href="https://tldw.us/analyze/IcbuTTVUY7M?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DIcbuTTVUY7M"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="longcut-link"
+                  >
+                    <span>Watch on LongCut</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M15 3h6v6"></path>
+                      <path d="M10 14 21 3"></path>
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Card 3 -->
+            <div class="video-card" style="animation-delay: 400ms">
+              <div class="video-embed">
+                <iframe
+                  src="https://www.youtube.com/embed/mccQdu5afZw"
+                  title="Inside NotebookLM"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="video-content">
+                <div class="video-body">
+                  <div class="video-tags">
+                    <button class="tag">Product</button>
+                  </div>
+                  <a
+                    href="https://www.youtube.com/watch?v=mccQdu5afZw"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="video-title-link"
+                  >
+                    <h3 class="video-title">
+                      <strong
+                        >Inside NotebookLM with Raiza Martin and Steven
+                        Johnson</strong
+                      >
+                    </h3>
+                  </a>
+                  <p class="video-author">Google</p>
+                  <p class="video-description">
+                    Behind the scenes look at Google's NotebookLM, one of my
+                    favorite AI products
+                  </p>
+                </div>
+                <div class="video-footer">
+                  <span class="video-duration">46:11</span>
+                  <a
+                    href="https://tldw.us/analyze/mccQdu5afZw?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DmccQdu5afZw"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="longcut-link"
+                  >
+                    <span>Watch on LongCut</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M15 3h6v6"></path>
+                      <path d="M10 14 21 3"></path>
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Card 4 -->
+            <div class="video-card" style="animation-delay: 500ms">
+              <div class="video-embed">
+                <iframe
+                  src="https://www.youtube.com/embed/ysPbXH0LpIE"
+                  title="Prompting 101"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="video-content">
+                <div class="video-body">
+                  <div class="video-tags">
+                    <button class="tag">Prompting</button>
+                    <button class="tag">Product</button>
+                  </div>
+                  <a
+                    href="https://www.youtube.com/watch?v=ysPbXH0LpIE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="video-title-link"
+                  >
+                    <h3 class="video-title">
+                      <strong>Prompting 101 | Code w/ Claude</strong>
+                    </h3>
+                  </a>
+                  <p class="video-author">Anthropic</p>
+                  <p class="video-description">
+                    Hands-on guidance on prompting from the Anthropic team
+                  </p>
+                </div>
+                <div class="video-footer">
+                  <span class="video-duration">24:52</span>
+                  <a
+                    href="https://tldw.us/analyze/ysPbXH0LpIE?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DysPbXH0LpIE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="longcut-link"
+                  >
+                    <span>Watch on LongCut</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M15 3h6v6"></path>
+                      <path d="M10 14 21 3"></path>
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Card 5 -->
+            <div class="video-card" style="animation-delay: 600ms">
+              <div class="video-embed">
+                <iframe
+                  src="https://www.youtube.com/embed/RNJCfif1dPY"
+                  title="Andrew Ng: Building Faster with AI"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="video-content">
+                <div class="video-body">
+                  <div class="video-tags">
+                    <button class="tag">Practical tutorial</button>
+                    <button class="tag">Product</button>
+                  </div>
+                  <a
+                    href="https://www.youtube.com/watch?v=RNJCfif1dPY"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="video-title-link"
+                  >
+                    <h3 class="video-title">
+                      <strong>Andrew Ng: Building Faster with AI</strong>
+                    </h3>
+                  </a>
+                  <p class="video-author">Y Combinator</p>
+                  <p class="video-description">
+                    Andrew Ng's talk at YC reshaped how I think about product
+                    development in the AI era
+                  </p>
+                </div>
+                <div class="video-footer">
+                  <span class="video-duration">43:57</span>
+                  <a
+                    href="https://tldw.us/analyze/RNJCfif1dPY?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DRNJCfif1dPY"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="longcut-link"
+                  >
+                    <span>Watch on LongCut</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M15 3h6v6"></path>
+                      <path d="M10 14 21 3"></path>
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Card 6 -->
+            <div class="video-card" style="animation-delay: 700ms">
+              <div class="video-embed">
+                <iframe
+                  src="https://www.youtube.com/embed/ixY2PvQJ0To"
+                  title="Inside ChatGPT"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="video-content">
+                <div class="video-body">
+                  <div class="video-tags">
+                    <button class="tag">Vibe coding</button>
+                    <button class="tag">Product</button>
+                    <button class="tag">Marketing and growth</button>
+                  </div>
+                  <a
+                    href="https://www.youtube.com/watch?v=ixY2PvQJ0To"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="video-title-link"
+                  >
+                    <h3 class="video-title">
+                      <strong
+                        >Inside ChatGPT: The fastest growing product in history
+                        | Nick Turley (OpenAI)</strong
+                      >
+                    </h3>
+                  </a>
+                  <p class="video-author">Lenny's Podcast</p>
+                  <p class="video-description">
+                    Insider stories behind ChatGPT's growth
+                  </p>
+                </div>
+                <div class="video-footer">
+                  <span class="video-duration">1:35:37</span>
+                  <a
+                    href="https://tldw.us/analyze/ixY2PvQJ0To?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DixY2PvQJ0To"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="longcut-link"
+                  >
+                    <span>Watch on LongCut</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M15 3h6v6"></path>
+                      <path d="M10 14 21 3"></path>
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Divider -->
+      <div class="container">
+        <div class="section-divider-line"></div>
+      </div>
+
+      <!-- Video Podcasts Section -->
+      <section class="podcasts-section">
+        <div class="container">
+          <h2 class="section-title">Video Podcasts</h2>
+          <div class="section-underline"></div>
+          <p class="section-description">
+            For those with <strong>👁 Watch</strong> tags, I recommend watching
+            the video versions (instead of just listening to the audio), because
+            many of these feature visual information like product demos/screen
+            shares<br /><br />
+            For proper learning, consume them from start to finish. Don't just
+            generate a summary with AI 👀<br /><br />
+            I include the YouTube links because I prefer the video versions. For
+            audio versions, type the show names into any podcast apps to listen
+          </p>
+
+          <div class="podcast-grid">
+            <!-- Podcast 1 -->
+            <div class="podcast-card">
+              <p class="podcast-title"><strong>Latent Space</strong></p>
+              <div class="podcast-tags">
+                <span class="tag-badge">👁 Watch</span>
+              </div>
+              <p class="podcast-host">by Swyx and Alessio Fanelli</p>
+              <p class="podcast-description">
+                <strong>SHOW DESCRIPTION:</strong> The AI Engineer Podcast - for
+                builders working with AI
+              </p>
+              <a
+                href="https://www.youtube.com/@LatentSpaceTV"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="podcast-link"
+              >
+                <span>Watch on YouTube</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M15 3h6v6"></path>
+                  <path d="M10 14 21 3"></path>
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Podcast 2 -->
+            <div class="podcast-card">
+              <p class="podcast-title"><strong>AI & I</strong></p>
+              <div class="podcast-tags">
+                <span class="tag-badge">👁 Watch</span>
+              </div>
+              <p class="podcast-host">by Andy Ayrey</p>
+              <p class="podcast-description">
+                <strong>SHOW DESCRIPTION:</strong> Conversations with AI
+                researchers and builders
+              </p>
+              <a
+                href="https://www.youtube.com/@AIandIPodcast"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="podcast-link"
+              >
+                <span>Watch on YouTube</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M15 3h6v6"></path>
+                  <path d="M10 14 21 3"></path>
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Podcast 3 -->
+            <div class="podcast-card">
+              <p class="podcast-title">
+                <strong>Google DeepMind: The Podcast</strong>
+              </p>
+              <div class="podcast-tags">
+                <span class="tag-badge">🎧 Listen</span>
+              </div>
+              <p class="podcast-host">by Google DeepMind</p>
+              <p class="podcast-description">
+                <strong>SHOW DESCRIPTION:</strong> Insights from AI researchers
+                at Google DeepMind
+              </p>
+              <a
+                href="https://www.youtube.com/@Google DeepMind"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="podcast-link"
+              >
+                <span>Watch on YouTube</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M15 3h6v6"></path>
+                  <path d="M10 14 21 3"></path>
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Podcast 4 -->
+            <div class="podcast-card">
+              <p class="podcast-title"><strong>Cognitive Revolution</strong></p>
+              <div class="podcast-tags">
+                <span class="tag-badge">🎧 Listen</span>
+              </div>
+              <p class="podcast-host">by Nathan Labenz</p>
+              <p class="podcast-description">
+                <strong>SHOW DESCRIPTION:</strong> AI scouting, analysis and
+                interviews
+              </p>
+              <a
+                href="https://www.youtube.com/@CognitiveRevolutionPodcast"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="podcast-link"
+              >
+                <span>Watch on YouTube</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M15 3h6v6"></path>
+                  <path d="M10 14 21 3"></path>
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Podcast 5 -->
+            <div class="podcast-card">
+              <p class="podcast-title"><strong>No Priors</strong></p>
+              <div class="podcast-tags">
+                <span class="tag-badge">👁 Watch</span>
+              </div>
+              <p class="podcast-host">by Sarah Guo and Elad Gil</p>
+              <p class="podcast-description">
+                <strong>SHOW DESCRIPTION:</strong> Artificial Intelligence |
+                Technology | Startups
+              </p>
+              <a
+                href="https://www.youtube.com/@NoPriorsPod"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="podcast-link"
+              >
+                <span>Watch on YouTube</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M15 3h6v6"></path>
+                  <path d="M10 14 21 3"></path>
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Divider -->
+      <div class="container">
+        <div class="section-divider-line"></div>
+      </div>
+
+      <!-- People to Follow Section -->
+      <section class="people-section">
+        <div class="container">
+          <h2 class="section-title">People to Follow on X</h2>
+          <div class="section-underline"></div>
+          <p class="section-description">
+            These are people I follow and learn from on X (Twitter). They share
+            valuable insights about AI, product development, and technology.
+          </p>
+
+          <div class="people-grid">
+            <!-- Person 1 -->
+            <div class="person-card">
+              <div class="person-avatar">
+                <div class="avatar-placeholder">@</div>
+              </div>
+              <a
+                href="https://x.com/karpathy"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="person-name"
+              >
+                <strong>Andrej Karpathy</strong>
+              </a>
+              <p class="person-handle">@karpathy</p>
+              <p class="person-bio">
+                Former Tesla AI Director, OpenAI founding member. Building
+                education in AI.
+              </p>
+            </div>
+
+            <!-- Person 2 -->
+            <div class="person-card">
+              <div class="person-avatar">
+                <div class="avatar-placeholder">@</div>
+              </div>
+              <a
+                href="https://x.com/sama"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="person-name"
+              >
+                <strong>Sam Altman</strong>
+              </a>
+              <p class="person-handle">@sama</p>
+              <p class="person-bio">
+                CEO of OpenAI. Building AGI for the benefit of humanity.
+              </p>
+            </div>
+
+            <!-- Person 3 -->
+            <div class="person-card">
+              <div class="person-avatar">
+                <div class="avatar-placeholder">@</div>
+              </div>
+              <a
+                href="https://x.com/swyx"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="person-name"
+              >
+                <strong>Swyx</strong>
+              </a>
+              <p class="person-handle">@swyx</p>
+              <p class="person-bio">
+                AI Engineer. Co-host of Latent Space podcast.
+              </p>
+            </div>
+
+            <!-- Person 4 -->
+            <div class="person-card">
+              <div class="person-avatar">
+                <div class="avatar-placeholder">@</div>
+              </div>
+              <a
+                href="https://x.com/emollick"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="person-name"
+              >
+                <strong>Ethan Mollick</strong>
+              </a>
+              <p class="person-handle">@emollick</p>
+              <p class="person-bio">
+                Professor at Wharton. Researching AI and its impact on work and
+                education.
+              </p>
+            </div>
+
+            <!-- Person 5 -->
+            <div class="person-card">
+              <div class="person-avatar">
+                <div class="avatar-placeholder">@</div>
+              </div>
+              <a
+                href="https://x.com/goodside"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="person-name"
+              >
+                <strong>Riley Goodside</strong>
+              </a>
+              <p class="person-handle">@goodside</p>
+              <p class="person-bio">
+                Prompt Engineer. Exploring the capabilities and limitations of
+                LLMs.
+              </p>
+            </div>
+
+            <!-- Person 6 -->
+            <div class="person-card">
+              <div class="person-avatar">
+                <div class="avatar-placeholder">@</div>
+              </div>
+              <a
+                href="https://x.com/ylecun"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="person-name"
+              >
+                <strong>Yann LeCun</strong>
+              </a>
+              <p class="person-handle">@ylecun</p>
+              <p class="person-bio">
+                Chief AI Scientist at Meta. Turing Award winner.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Divider -->
+      <div class="container">
+        <div class="section-divider-line"></div>
+      </div>
+
+      <!-- Newsletters Section -->
+      <section class="newsletters-section">
+        <div class="container">
+          <h2 class="section-title">Newsletters</h2>
+          <div class="section-underline"></div>
+          <p class="section-description">
+            Quality newsletters to stay updated on AI developments, curated
+            insights, and industry trends.
+          </p>
+
+          <div class="newsletter-grid">
+            <!-- Newsletter 1 -->
+            <div class="newsletter-card">
+              <h3 class="newsletter-title"><strong>The Batch</strong></h3>
+              <p class="newsletter-author">by Andrew Ng / DeepLearning.AI</p>
+              <p class="newsletter-description">
+                Weekly newsletter with curated AI news and insights from Andrew
+                Ng's team.
+              </p>
+              <a
+                href="https://www.deeplearning.ai/the-batch/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="newsletter-link"
+              >
+                Subscribe →
+              </a>
+            </div>
+
+            <!-- Newsletter 2 -->
+            <div class="newsletter-card">
+              <h3 class="newsletter-title"><strong>Import AI</strong></h3>
+              <p class="newsletter-author">by Jack Clark</p>
+              <p class="newsletter-description">
+                Weekly newsletter covering AI research, policy, and
+                implications.
+              </p>
+              <a
+                href="https://jack-clark.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="newsletter-link"
+              >
+                Subscribe →
+              </a>
+            </div>
+
+            <!-- Newsletter 3 -->
+            <div class="newsletter-card">
+              <h3 class="newsletter-title"><strong>AI Breakfast</strong></h3>
+              <p class="newsletter-author">by Ben's Bites</p>
+              <p class="newsletter-description">
+                Daily AI news and product launches. Quick reads to stay updated.
+              </p>
+              <a
+                href="https://www.bensbites.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="newsletter-link"
+              >
+                Subscribe →
+              </a>
+            </div>
+
+            <!-- Newsletter 4 -->
+            <div class="newsletter-card">
+              <h3 class="newsletter-title"><strong>The Neuron</strong></h3>
+              <p class="newsletter-author">by Pete Huang</p>
+              <p class="newsletter-description">
+                Daily newsletter about AI news, tools, and tutorials.
+              </p>
+              <a
+                href="https://www.theneurondaily.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="newsletter-link"
+              >
+                Subscribe →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Divider -->
+      <div class="container">
+        <div class="section-divider-line"></div>
+      </div>
+
+      <!-- Products Section -->
+      <section class="products-section">
+        <div class="container">
+          <h2 class="section-title">Products I like</h2>
+          <div class="section-underline"></div>
+          <p class="section-description">
+            AI products and tools that I personally use and find valuable. These
+            have genuinely improved my workflow and learning.
+          </p>
+
+          <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+              <div class="product-icon">🎯</div>
+              <h3 class="product-title"><strong>Claude</strong></h3>
+              <p class="product-category">AI Assistant</p>
+              <p class="product-description">
+                My go-to AI assistant for writing, coding, and analysis.
+                Excellent at nuanced understanding and long-form content.
+              </p>
+              <a
+                href="https://claude.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="product-link"
+              >
+                Try Claude →
+              </a>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+              <div class="product-icon">📝</div>
+              <h3 class="product-title"><strong>NotebookLM</strong></h3>
+              <p class="product-category">Research Tool</p>
+              <p class="product-description">
+                Google's AI research assistant. Upload documents and have
+                intelligent conversations about them.
+              </p>
+              <a
+                href="https://notebooklm.google"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="product-link"
+              >
+                Try NotebookLM →
+              </a>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+              <div class="product-icon">🎬</div>
+              <h3 class="product-title"><strong>LongCut</strong></h3>
+              <p class="product-category">Learning Tool</p>
+              <p class="product-description">
+                Learn from long YouTube videos faster. Built by my friends and
+                me to make video learning more efficient.
+              </p>
+              <a
+                href="https://longcut.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="product-link"
+              >
+                Try LongCut →
+              </a>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+              <div class="product-icon">💬</div>
+              <h3 class="product-title"><strong>ChatGPT</strong></h3>
+              <p class="product-category">AI Assistant</p>
+              <p class="product-description">
+                The OG AI assistant. Great for quick questions, brainstorming,
+                and general knowledge.
+              </p>
+              <a
+                href="https://chat.openai.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="product-link"
+              >
+                Try ChatGPT →
+              </a>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+              <div class="product-icon">🎨</div>
+              <h3 class="product-title"><strong>Midjourney</strong></h3>
+              <p class="product-category">Image Generation</p>
+              <p class="product-description">
+                Best-in-class AI image generation. Amazing for creative
+                exploration and visual content.
+              </p>
+              <a
+                href="https://midjourney.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="product-link"
+              >
+                Try Midjourney →
+              </a>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+              <div class="product-icon">🔍</div>
+              <h3 class="product-title"><strong>Perplexity</strong></h3>
+              <p class="product-category">AI Search</p>
+              <p class="product-description">
+                AI-powered search engine. Get accurate, sourced answers to your
+                questions.
+              </p>
+              <a
+                href="https://perplexity.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="product-link"
+              >
+                Try Perplexity →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Divider -->
+      <div class="container">
+        <div class="section-divider-line"></div>
+      </div>
+
+      <!-- Prompts Section -->
+      <section class="prompts-section">
+        <div class="container">
+          <h2 class="section-title">Prompts</h2>
+          <div class="section-underline"></div>
+          <p class="section-description">
+            Useful prompts I've collected and use regularly. These are
+            battle-tested and genuinely helpful.
+          </p>
+
+          <div class="prompts-grid">
+            <!-- Prompt 1 -->
+            <div class="prompt-card">
+              <div class="prompt-header">
+                <h3 class="prompt-title">Learning Assistant</h3>
+                <button
+                  class="copy-btn"
+                  data-copy="I'm learning about [topic]. Please explain it to me like I'm smart but unfamiliar with this specific area. Use analogies where helpful, and check my understanding by asking me questions."
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect
+                      x="9"
+                      y="9"
+                      width="13"
+                      height="13"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <path
+                      d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                    ></path>
+                  </svg>
+                  Copy
+                </button>
+              </div>
+              <p class="prompt-description">
+                Use this to learn complex topics effectively
+              </p>
+              <div class="prompt-code">
+                <code
+                  >I'm learning about [topic]. Please explain it to me like I'm
+                  smart but unfamiliar with this specific area. Use analogies
+                  where helpful, and check my understanding by asking me
+                  questions.</code
+                >
+              </div>
+            </div>
+
+            <!-- Prompt 2 -->
+            <div class="prompt-card">
+              <div class="prompt-header">
+                <h3 class="prompt-title">Writing Improver</h3>
+                <button
+                  class="copy-btn"
+                  data-copy="Please review this text and suggest improvements for clarity, conciseness, and impact. Maintain my voice and tone: [your text]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect
+                      x="9"
+                      y="9"
+                      width="13"
+                      height="13"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <path
+                      d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                    ></path>
+                  </svg>
+                  Copy
+                </button>
+              </div>
+              <p class="prompt-description">
+                Get helpful feedback on your writing
+              </p>
+              <div class="prompt-code">
+                <code
+                  >Please review this text and suggest improvements for clarity,
+                  conciseness, and impact. Maintain my voice and tone: [your
+                  text]</code
+                >
+              </div>
+            </div>
+
+            <!-- Prompt 3 -->
+            <div class="prompt-card">
+              <div class="prompt-header">
+                <h3 class="prompt-title">Code Explainer</h3>
+                <button
+                  class="copy-btn"
+                  data-copy="Explain this code to me step by step. What does each part do, and why? [paste code]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect
+                      x="9"
+                      y="9"
+                      width="13"
+                      height="13"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <path
+                      d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                    ></path>
+                  </svg>
+                  Copy
+                </button>
+              </div>
+              <p class="prompt-description">Understand code clearly</p>
+              <div class="prompt-code">
+                <code
+                  >Explain this code to me step by step. What does each part do,
+                  and why? [paste code]</code
+                >
+              </div>
+            </div>
+
+            <!-- Prompt 4 -->
+            <div class="prompt-card">
+              <div class="prompt-header">
+                <h3 class="prompt-title">Brainstorming Partner</h3>
+                <button
+                  class="copy-btn"
+                  data-copy="I'm working on [project/problem]. Help me brainstorm creative solutions. Ask me clarifying questions first, then suggest diverse approaches."
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect
+                      x="9"
+                      y="9"
+                      width="13"
+                      height="13"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <path
+                      d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                    ></path>
+                  </svg>
+                  Copy
+                </button>
+              </div>
+              <p class="prompt-description">Generate creative ideas</p>
+              <div class="prompt-code">
+                <code
+                  >I'm working on [project/problem]. Help me brainstorm creative
+                  solutions. Ask me clarifying questions first, then suggest
+                  diverse approaches.</code
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
